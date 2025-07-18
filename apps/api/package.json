@@ -1,10 +1,10 @@
 {
-  "name": "@yata/db",
-  "module": "index.ts",
+  "name": "api",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "scripts": {
-    "db:generate": "prisma generate"
+    "dev": "bun --watch src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -13,7 +13,9 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@prisma/client": "^6.12.0",
-    "prisma": "^6.12.0"
+    "@hono/zod-validator": "^0.7.1",
+    "@yata/db": "workspace:*",
+    "hono": "^4.8.5",
+    "zod": "^4.0.5"
   }
 }
