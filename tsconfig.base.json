@@ -1,0 +1,31 @@
+{
+  "extends": "./packages/tsconfig-custom/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@yata/core": ["./packages/core/src"],
+      "@yata/core/*": ["./packages/core/src/*"],
+      "@yata/db": ["./packages/db/src"],
+      "@yata/db/*": ["./packages/db/src/*"],
+      "@yata/nlp": ["./packages/nlp/src"],
+      "@yata/nlp/*": ["./packages/nlp/src/*"],
+      "@yata/ui": ["./packages/ui/src"],
+      "@yata/ui/*": ["./packages/ui/src/*"],
+      "@yata/eslint-config-custom": ["./packages/eslint-config-custom"],
+      "@yata/tsconfig-custom": ["./packages/tsconfig-custom"]
+    }
+  },
+  "include": [],
+  "references": [
+    { "path": "./apps/api" },
+    { "path": "./apps/web" },
+    { "path": "./apps/mobile" },
+    { "path": "./apps/tui" },
+    { "path": "./packages/core" },
+    { "path": "./packages/db" },
+    { "path": "./packages/nlp" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/eslint-config-custom" },
+    { "path": "./packages/tsconfig-custom" }
+  ]
+}
