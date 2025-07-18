@@ -1,0 +1,16 @@
+{
+  "name": "@yata/core",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@nozbe/watermelondb": "^0.28.0",
+    "zod": "^4.0.5"
+  }
+}
